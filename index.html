@@ -4,18 +4,26 @@
 <script type="text/javascript" src="https://unpkg.com/tabulator-tables@4.4.3/dist/js/tabulator.min.js"></script>
 <head>
     <meta charset="UTF-8">
-    <title>Build a table</title>
+    <title>LiveASM</title>
 </head>
+<style>
+    div.inline { float:left; }
+    .clearBoth { clear:both; }
+    .inner-1 {
+        width: 50%;
+    }
+</style>
 <body>
-    <!-- <p id="txtPe"></p> -->
-    <div id="confPerCycle"></div>
     <div class="table-controls">
-        <button id="add-page">new cycle</button>
+        <button id="add-page">New Cycle</button>
+        <button id="download-json">Download</button>
+        <button id="load-json">Load</button>
     </div>
-    <p>PE:</p>
-
+    <p id="txtPe"></p>
+    <!-- <div  class="inline" class="inner-1" id="confPerCycle"></div>
+    <div  class="inline" class="inner-1" id="confOverview" ></div> -->
+    <div id="confPerCycle"></div>
     <div id="confOverview"></div>
 </body>
 <script src="build-table.js"></script>
-
 </html>
