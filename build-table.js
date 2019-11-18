@@ -52,6 +52,8 @@ var tableOverview = new Tabulator("#confOverview", {
 		{column:"id", dir:"asc"},
 	],
     columns:colNameOverview,
+    resizableRows:false,
+    //resizableColumns:false,
 });
 
 var rowNum = 0;
@@ -71,8 +73,9 @@ var tableConfPerCycle = new Tabulator("#confPerCycle", {
     // paginationSize:peNum,         //allow 7 rows per page of data
     // paginationAddRow:"table",
     //paginationSizeSelector:true,
-	movableColumns:true,      //allow column order to be changed
-	resizableRows:true,       //allow row order to be changed
+    movableColumns:true,      //allow column order to be changed
+    resizableRows:false,
+    //resizableColumns:false,
 	initialSort:[             //set the initial sort order of the data
 		{column:"name", dir:"asc"},
 	],
